@@ -5,7 +5,7 @@ python:
 
 install:
 - pip install -r requirements.txt
-- curl -L https://coveralls.io/coveralls-linux.tar.gz
+- curl -L https://coveralls.io/coveralls-linux.tar.gz | tar -xz
 
 script:
 - black --check .
