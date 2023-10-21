@@ -3,9 +3,6 @@ language: python
 python:
 - "3.9"
 
-env:
-- DJANGO=4.2.6
-
 install:
 - pip install -r requirements.txt
 - curl -L https://github.com/coverallsapp/coverage-reporter/releases/latest/download/coveralls-windows.exe -o coveralls.exe
