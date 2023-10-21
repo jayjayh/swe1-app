@@ -5,7 +5,7 @@ python:
 
 install:
 - pip install -r requirements.txt
-- curl -L https://github.com/coverallsapp/coverage-reporter/releases/latest/download/coveralls-windows.exe -o coveralls.exe
+- curl -L https://coveralls.io/coveralls-linux.tar.gz
 
 script:
 - black --check .
