@@ -19,10 +19,8 @@ after-script:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id:
-    secure: "$AWSKEY"
-  secret_access_key:
-    secure: "$AWSSECRET"
+  access_key_id: "$AWSKEY"
+  secret_access_key: "$AWSSECRET"
   region: "us-west-2"
   app: "django-tutorial-redo"
   env: "django-env6"
