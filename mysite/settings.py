@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ["django-env6.eba-gcpazg6n.us-west-2.elasticbeanstalk.com","*"]
 # Application definition
 
 INSTALLED_APPS = [
-    'libraries.apps.PollsConfig',
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
