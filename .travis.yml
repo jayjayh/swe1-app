@@ -18,3 +18,4 @@ deploy:
   region:"us-west-2"
   app:"django-tutorial-redo"
   env:"django-env6"
+  bucket_name:"django-ebs-bucket"
