@@ -6,8 +6,16 @@ python:
 env:
 - DJANGO=4.2.6
 
+install:
+- pip install -r requirements.txt
+
 script:
-- python manage.py test
+- black -- check .
+- flake8 .
+- coverage run manage.py test
+
+after-script:
+- coveralls
 
 deploy:
   provider: elasticbeanstalk
