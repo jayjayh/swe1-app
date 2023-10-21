@@ -16,7 +16,6 @@ script:
 - coverage run manage.py test
 
 after-script:
-- coveralls report
 - coveralls report --repo-token="$COVERALLTOKEN"
 
 deploy:
