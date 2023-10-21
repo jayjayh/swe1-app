@@ -8,6 +8,7 @@ env:
 
 install:
 - pip install -r requirements.txt
+- curl -L https://github.com/coverallsapp/coverage-reporter/releases/latest/download/coveralls-windows.exe -o coveralls.exe
 
 script:
 - black --check .
@@ -15,7 +16,8 @@ script:
 - coverage run manage.py test
 
 after-script:
-- coveralls
+- coveralls report
+- coveralls report --repo-token="$COVERALLTOKEN"
 
 deploy:
   provider: elasticbeanstalk
