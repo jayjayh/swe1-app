@@ -15,7 +15,7 @@ script:
 - flake8 . --max-line-length=99
 - coverage run manage.py test
 - coverage xml
-- ./coveralls report --repo-token=$COVERALLTOKEN coverages.xml
+- coveralls report --repo-token=$COVERALLTOKEN coverages.xml
 
 deploy:
   provider: elasticbeanstalk
