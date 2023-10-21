@@ -16,7 +16,8 @@ script:
 - coverage run manage.py test
 
 after-script:
-- coveralls report --repo-token="$COVERALLTOKEN"
+- coverage xml
+- coveralls report --repo-token="$COVERALLTOKEN" coverages.xml
 
 deploy:
   provider: elasticbeanstalk
