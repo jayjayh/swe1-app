@@ -3,8 +3,6 @@ from django.shortcuts import get_object_or_404, render
 from .models import Question, Choice
 from django.urls import reverse
 from django.views import generic
-from django.views import generic
-
 
 class IndexView(generic.ListView):
     template_name = "polls/index.html"
